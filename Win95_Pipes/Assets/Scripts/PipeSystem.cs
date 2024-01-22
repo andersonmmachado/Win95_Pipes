@@ -104,6 +104,7 @@ public class PipeSystem : MonoBehaviour
         int currentY = startY;
         int currentZ = startZ;
 
+        //TODO: Add a method to get the correct pipe type based on the current position, rotation of pipe is still needed to be added
         int pipeNumber = Random.Range(1, 2); // Different numbers for different pipe types
 
         // Get a unique material for each pipe type before starting to grow
@@ -204,6 +205,7 @@ public class PipeSystem : MonoBehaviour
         }
     }
 
+    //Just for debugging
     void DisplayGrid()
     {
         for (int x = 0; x < gridSize; x++)
