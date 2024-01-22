@@ -228,6 +228,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -309,6 +310,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 5.46, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2aaed6e30d26d746af28c914c830290, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1457326921}
+  moveSpeed: 5
+  zoomSpeed: 5
+  minZoom: 5
+  maxZoom: 20
 --- !u!1 &1457326919
 GameObject:
   m_ObjectHideFlags: 0
@@ -318,7 +336,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1457326921}
-  - component: {fileID: 1457326922}
+  - component: {fileID: 1457326923}
   m_Layer: 0
   m_Name: PipeGen
   m_TagString: Untagged
@@ -335,13 +353,13 @@ Transform:
   m_GameObject: {fileID: 1457326919}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.2643013, y: -2.361202, z: -0.371688}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1457326922
+--- !u!114 &1457326923
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -350,15 +368,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 1457326919}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c5d14256cd25394f80c28da6c9ab6df, type: 3}
+  m_Script: {fileID: 11500000, guid: 91c07d2555dded348b336b23fa3b0545, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridSizeX: 20
-  gridSizeY: 20
-  gridSizeZ: 20
-  pipeSegmentSize: 1
-  revealDelay: 0.5
-  pipePrefab: {fileID: 7160290378340536320, guid: 44c909cd4039b6c4d86f97766f7d9d28, type: 3}
+  gridSize: 20
+  regularPipePrefab: {fileID: 509023445719579065, guid: 7603dc51807a4ab45962ae84550926e7, type: 3}
+  elbowPiecePrefab: {fileID: 509023445719579065, guid: 7603dc51807a4ab45962ae84550926e7, type: 3}
+  pipeMaterials:
+  - {fileID: 2100000, guid: 3cc4ccfbee47b284c9c6816e508ef159, type: 2}
+  - {fileID: 2100000, guid: be809e71a909efe429f04df21860083f, type: 2}
+  - {fileID: 2100000, guid: 42b624fa662b5674395a527ea60563c6, type: 2}
+  - {fileID: 2100000, guid: c5db97a2505ce2b4489699ee4850dc68, type: 2}
+  - {fileID: 2100000, guid: ba9ff6e89af4c3c4bb764b326bd97cdb, type: 2}
+  - {fileID: 2100000, guid: f01a88e120cb2274aa17423fc71a568e, type: 2}
+  - {fileID: 2100000, guid: 94ca3875b53ee2740af7f18750534a0f, type: 2}
+  - {fileID: 2100000, guid: 11786c4c2c34f8a40aded0df391ae6c9, type: 2}
+  - {fileID: 2100000, guid: 8ef460afdbe79a443a303a03c8015b37, type: 2}
+  - {fileID: 2100000, guid: 4077ad72d9bc47846ab8e44372b40ead, type: 2}
+  - {fileID: 2100000, guid: ef9da72222669b141bc1dc36525887f1, type: 2}
+  - {fileID: 2100000, guid: d5a8f9dad99e4d843960552baca29f63, type: 2}
+  - {fileID: 2100000, guid: 7a6c066b9e7038d469a0c1fb82fb1a83, type: 2}
+  - {fileID: 2100000, guid: 6e2f53cad39662d4ca5b786a1d40269d, type: 2}
+  - {fileID: 2100000, guid: 8cd190807928ff343ab6a509c4f1809e, type: 2}
+  - {fileID: 2100000, guid: 50d35996cfdccb94e99336ec67800005, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
